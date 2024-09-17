@@ -1,0 +1,18 @@
+<script>
+    var n = prompt("Informe o número de termos da sequência:");
+
+    var termol = 0;
+    var termo2 = 1;
+    var termo3;
+
+    document.write(termol + ", " + termo2);
+
+    for (i = 3; i <= n; i++)
+    {
+
+    termo3 = termol + termo2;
+    document.write(", "+ termo3);
+    termol = termo2;
+    termo2 = termo3;
+    }
+    </script>
